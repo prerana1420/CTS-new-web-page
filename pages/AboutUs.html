@@ -26,15 +26,30 @@
       </div>
     </header>
   
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/WSnUTljM6xg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
       <main class="px-3 content">
-        
-          <!-- <h1 class="main-header ">Bookopedia</h1> -->
-
           <h2 class="featurette-heading">We <span class="text-muted">Bookopedia.</span></h2>
               <p class="handWritten">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
               <p class="lead">
-              <a href="./pages/Books.html" class="btn btn-lg btn-warning fw-bold border-white bg-white">Contact Us</a>
+              <!-- <a href="./pages/Books.html" class="btn btn-lg btn-warning fw-bold border-white bg-white">Contact Us</a> -->
+              <button type="button" class="btn btn-lg btn-warning fw-bold border-white bg-white" data-bs-toggle="modal" data-bs-target="#exampleModal">What people SAY?</button>
+
               </p>
       </main>
   
