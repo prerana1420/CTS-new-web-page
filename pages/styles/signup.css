@@ -1,71 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-h1{
-    color: rgb(151, 25, 84);
-    font-family: 'Cinzel', serif;
-}
 
-.form-control{
-    text-align: left;
-    margin-bottom: 30px;
-}
-
-form{
-    margin: 50px auto;
-    padding: 30px 30px;
-    max-width: 500px;
-    background-color: rgb(160, 126, 193);
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9), 0 6px 20px 0 rgba(0,0,0,0.9);
-    opacity: 0.88;
-    font-family: 'Quicksand', sans-serif;
-    border-radius: 15px;
-    color: rgb(205, 215, 224);
-    font-weight: bold;
-    
-}
-
-.form-control input,
-.form-control select,
-.form-control textarea{
-    width: 90%;
-}
-
-.form-control input[type="radio"],
-.form-control input[type="checkbox"]{
-    display: inline-block;
-    width: auto;
-    
-}
-
-
-button{
-    display: block;
-     width: 30%; 
-    padding: 5px 5px;
-    background-color: rgb(99, 156, 99);
-    border-radius: 10px;
-    
-    
-}
-
-body{
+body {
     background-image: url(https://i.pinimg.com/originals/47/08/4c/47084cecba154564fa1413cab3c41956.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.container{
-    padding :20px;
+h1 {
+    color: rgb(151, 25, 84);
+    font-family: 'Cinzel', serif;
 }
 
-.form-control input{
+.form-control {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+form {
+    margin: 50px auto;
+    padding: 30px 30px;
+    max-width: 100em;
+    background-color: rgb(160, 126, 193);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    opacity: 0.88;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 15px;
+    color: rgb(205, 215, 224);
+    font-weight: bold;
+
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+    width: 90%;
+}
+
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+
+}
+
+
+button {
+    display: block;
+    width: 30%;
+    padding: 5px 5px;
+    background-color: rgb(99, 156, 99);
+    border-radius: 10px;
+
+
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.form-control input {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-.form-control textarea{
+.form-control textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -73,14 +75,14 @@ body{
     resize: none;
 }
 
-.form-control select{
+.form-control select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
 }
 
-.placing{
+.placing {
     display: flex;
     flex-direction: row;
     gap: 6px;
