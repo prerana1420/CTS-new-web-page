@@ -32,39 +32,45 @@
             <p style="text-align:center; background-color:white; color: black;">Discounts on your way ! Sign-Up quickly
             </p>
         </div>
-          
+
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title text-center" id="exampleModalLabel" style="color: black;">✅ Successfully Saved!</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLabel" style="color: black;">✅ Successfully
+                            Saved!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
 
-        <form style="text-align:center;">
+        <form style="text-align:center;" name="signup" method="post" onsubmit="return validationForm()">
 
             <div class="container">
 
                 <div class="form-control">
                     <label style="display: block; margin-bottom: 10px;">Student Name</label>
-                    <input type="text" name="Student Name" placeholder="Enter your name">
+                    <input type="text" id="name" name="Name" placeholder="Enter your name" required>
                 </div>
 
                 <div class="form-control">
                     <label style="display: block; margin-bottom: 10px;">Email Id</label>
-                    <input type="text" name="Student Email Id" placeholder="Enter your email">
+                    <input type="email" id="email" name="Email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-control">
+                    <label style="display: block; margin-bottom: 10px;">Password</label>
+                    <input type="password" id="password name="Password" placeholder="Enter your Password" required>
                 </div>
 
                 <div class="form-control">
                     <label style="display: block; margin-bottom: 10px;">Date Of Birth</label>
-                    <input type="date" name="DOB" placeholder="Enter your Date of Birth">
+                    <input type="date" id="dob" name="DOB" placeholder="Enter your Date of Birth">
                 </div>
 
                 <div class="form-control">
-                    <label style="display: block; margin-bottom: 10px;">Gender</label>
+                    <label style="display: block; margin-bottom: 10px;" >Gender</label>
                     <input type="radio" name="choice">Female
                     <input type="radio" name="choice">Male
                     <input type="radio" name="choice">Others
@@ -79,9 +85,13 @@
                 </div>
 
                 <div class="placing">
-                    <button type="button" style="color:aliceblue" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Save</b></button>
+                    <button type="button" style="color:aliceblue" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"><b>Save</b></button>
 
                     <button type="reset" style="color:aliceblue"><b>Reset</b></button>
+
+                    <button type="submit" style="color:aliceblue"><b>Submit</b></button>
+
                 </div>
 
                 <i style="font-size: x-small;">For further info contact us <a href="https://www.google.com/">
@@ -92,13 +102,15 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
-    
-    
-    
+
+
+
 <!--  <!DOCTYPE html>
 <html>
     <head>
@@ -111,8 +123,8 @@
         <h1 style="text-align: center;"> Sign-up!!</h1>
         <div>
             <marquee width="100%" direction="right"  style="background-color: aliceblue;">Discounts on your way ! Sign-Up quickly</marquee>
-            <!-- <p style="text-align:center; background-color:white"></p> -->
-        </div>
+<p style="text-align:center; background-color:white"></p> -->
+<!-- </div>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -159,11 +171,11 @@
                 <input type="checkbox" name="select">Maybe
             </div>
 
-       <!-- <div class="placing">
+       <div class="placing">
             <button type="submit" style="color:aliceblue"><b>Submit</b></button>
         
             <button type="reset" style="color:aliceblue"><b>Cancel</b></button>
-        </div>-->
+        </div>
         <div class="placing">
             <button type="button" style="color:aliceblue" data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Save</b></button>
 
@@ -176,5 +188,4 @@
     </form>
     </body>
 
-</html>
-    -->
+</html> -->

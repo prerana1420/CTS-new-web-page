@@ -12,23 +12,23 @@
 <body class="Feedback">
      <h1 style="text-align: center;"> App Survey Form</h1>
     
-    <form style="text-align: center;">
+    <form style="text-align: center;" method="post" onsubmit="return validationForm()">
         <fieldset>
             <div class="container">
 
         <div class="form-control">
         <label style="display: block; margin-bottom: 10px;">Student Name</label>
-        <input type="text" name="Student Name" placeholder="Enter your name">
+        <input type="text" id="name" name="Student Name" placeholder="Enter your name" required>
         </div>
 
         <div class="form-control">
             <label style="display: block; margin-bottom: 10px;">Student Email Id</label>
-            <input type="text" name="Student Email Id" placeholder="Enter your email">
+            <input type="text" id="email" name="Student Email Id" placeholder="Enter your email" required>
         </div>
 
         <div class="form-control">
             <label style="display: block; margin-bottom: 10px;">Institution</label>
-            <input type="text" name="Institution" placeholder="Enter your school name">
+            <input type="text" name="Institution" placeholder="Enter your school name" required>
         </div>
 
         <div class="form-control">
